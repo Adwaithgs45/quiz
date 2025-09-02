@@ -1,2 +1,152 @@
-<div><br class="Apple-interchange-newline">/* Reset & Base */<br>* {<br><span>  </span>box-sizing: border-box;<br><span>  </span>margin: 0;<br><span>  </span>padding: 0;<br><span>  </span>font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;<br>}<br><br>body {<br><span>  </span>background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);<br><span>  </span>min-height: 100vh;<br><span>  </span>display: flex;<br><span>  </span>justify-content: center;<br><span>  </span>align-items: center;<br><span>  </span>padding: 20px;<br><span>  </span>color: #fff;<br>}<br><br>.container {<br><span>  </span>width: 100%;<br><span>  </span>max-width: 700px;<br>}<br><br>/* Card Style */<br>.card {<br><span>  </span>background-color: rgba(255, 255, 255, 0.1);<br><span>  </span>padding: 30px 40px;<br><span>  </span>border-radius: 15px;<br><span>  </span>box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);<br><span>  </span>backdrop-filter: blur(10px);<br>}<br><br>.hidden {<br><span>  </span>display: none;<br>}<br><br>h2 {<br><span>  </span>text-align: center;<br><span>  </span>margin-bottom: 20px;<br><span>  </span>font-weight: 700;<br><span>  </span>font-size: 2rem;<br><span>  </span>color: #f0f0f0;<br>}<br><br>/* Input & Buttons */<br>input[type="text"] {<br><span>  </span>width: 100%;<br><span>  </span>padding: 12px 15px;<br><span>  </span>border-radius: 8px;<br><span>  </span>border: none;<br><span>  </span>font-size: 1rem;<br><span>  </span>margin-bottom: 10px;<br><span>  </span>outline: none;<br><span>  </span>transition: background-color 0.3s ease;<br>}<br><br>input[type="text"]:focus {<br><span>  </span>background-color: rgba(255, 255, 255, 0.15);<br><span>  </span>color: #fff;<br>}<br><br>button {<br><span>  </span>width: 100%;<br><span>  </span>padding: 12px;<br><span>  </span>border-radius: 8px;<br><span>  </span>border: none;<br><span>  </span>font-size: 1.1rem;<br><span>  </span>cursor: pointer;<br><span>  </span>transition: background-color 0.3s ease;<br><span>  </span>font-weight: 600;<br>}<br><br>.btn-primary {<br><span>  </span>background-color: #2575fc;<br><span>  </span>color: white;<br><span>  </span>margin-top: 20px;<br>}<br><br>.btn-primary:hover {<br><span>  </span>background-color: #1953d1;<br>}<br><br>.btn-secondary {<br><span>  </span>background-color: #444;<br><span>  </span>color: #ddd;<br><span>  </span>margin-top: 10px;<br>}<br><br>.btn-secondary:hover {<br><span>  </span>background-color: #222;<br>}<br><br>/* Error Message */<br>.error {<br><span>  </span>color: #ff4d4d;<br><span>  </span>font-weight: 600;<br><span>  </span>margin-bottom: 10px;<br><span>  </span>min-height: 20px;<br><span>  </span>text-align: center;<br>}<br><br>/* Timer */<br>#timer {<br><span>  </span>font-weight: 700;<br><span>  </span>font-size: 1.2rem;<br><span>  </span>color: #ffec99;<br>}<br><br>/* Quiz Questions */<br>.quiz-form > div {<br><span>  </span>margin-bottom: 25px;<br><span>  </span>padding-bottom: 10px;<br><span>  </span>border-bottom: 1px solid rgba(255, 255, 255, 0.2);<br>}<br><br>.quiz-form p {<br><span>  </span>font-weight: 700;<br><span>  </span>margin-bottom: 12px;<br><span>  </span>font-size: 1.1rem;<br><span>  </span>color: #e2e2e2;<br>}<br><br>.quiz-form label {<br><span>  </span>display: block;<br><span>  </span>margin-bottom: 8px;<br><span>  </span>cursor: pointer;<br><span>  </span>font-weight: 500;<br><span>  </span>font-size: 1rem;<br><span>  </span>color: #ddd;<br><span>  </span>transition: color 0.2s ease;<br><span>  </span>user-select: none;<br>}<br><br>.quiz-form input[type="radio"] {<br><span>  </span>margin-right: 10px;<br>}<br><br>.quiz-form label:hover {<br>  color: #fff;<br>}<br><br>/* Leaderboard */<br>.leaderboard-list {<br>  list-style-position: inside;<br>  padding-left: 0;<br>  font-size: 1.1rem;<br>  color: #fff;<br>}<br><br>.leaderboard-list li {<br>  margin-bottom: 12px;<br>  background: rgba(0, 0, 0, 0.25);<br>  padding: 10px 15px;<br>  border-radius: 10px;<br>}<br><br>/* Header layout in quiz */<br>.header {<br>  display: flex;<br>  justify-content: space-between;<br>  align-items: center;<br>  margin-bottom: 15px;<br>}<br><br>@media (max-width: 600px) {<br>  .card {<br>    padding: 20px;<br>  }<br>  h2 {<br>    font-size: 1.5rem;<br>  }<br>  button {<br>    font-size: 1rem;<br>  }<br>}<br><br id="textarea-placeholder-break"></div>
- 
+/* Reset & Base */
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 20px;
+color: #fff;
+}
+.container {
+width: 100%;
+max-width: 700px;
+}
+/* Card Style */
+.card {
+background-color: rgba(255, 255, 255, 0.1);
+padding: 30px 40px;
+border-radius: 15px;
+box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+backdrop-filter: blur(10px);
+}
+.hidden {
+display: none;
+}
+h2 {
+text-align: center;
+margin-bottom: 20px;
+font-weight: 700;
+font-size: 2rem;
+color: #f0f0f0;
+}
+/* Input & Buttons */
+input[type="text"] {
+width: 100%;
+padding: 12px 15px;
+border-radius: 8px;
+border: none;
+font-size: 1rem;
+margin-bottom: 10px;
+outline: none;
+transition: background-color 0.3s ease;
+}
+input[type="text"]:focus {
+background-color: rgba(255, 255, 255, 0.15);
+color: #fff;
+}
+button {
+width: 100%;
+padding: 12px;
+border-radius: 8px;
+border: none;
+font-size: 1.1rem;
+cursor: pointer;
+transition: background-color 0.3s ease;
+font-weight: 600;
+}
+.btn-primary {
+background-color: #2575fc;
+color: white;
+margin-top: 20px;
+}
+.btn-primary:hover {
+background-color: #1953d1;
+}
+.btn-secondary {
+background-color: #444;
+color: #ddd;
+margin-top: 10px;
+}
+.btn-secondary:hover {
+background-color: #222;
+}
+/* Error Message */
+.error {
+color: #ff4d4d;
+font-weight: 600;
+margin-bottom: 10px;
+min-height: 20px;
+text-align: center;
+}
+/* Timer */
+#timer {
+font-weight: 700;
+font-size: 1.2rem;
+color: #ffec99;
+}
+/* Quiz Questions */
+.quiz-form > div {
+margin-bottom: 25px;
+padding-bottom: 10px;
+border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.quiz-form p {
+font-weight: 700;
+margin-bottom: 12px;
+font-size: 1.1rem;
+color: #e2e2e2;
+}
+.quiz-form label {
+display: block;
+margin-bottom: 8px;
+cursor: pointer;
+font-weight: 500;
+font-size: 1rem;
+color: #ddd;
+transition: color 0.2s ease;
+user-select: none;
+}
+.quiz-form input[type="radio"] {
+margin-right: 10px;
+}
+.quiz-form label:hover {
+color: #fff;
+}
+/* Leaderboard */
+.leaderboard-list {
+list-style-position: inside;
+padding-left: 0;
+font-size: 1.1rem;
+color: #fff;
+}
+.leaderboard-list li {
+margin-bottom: 12px;
+background: rgba(0, 0, 0, 0.25);
+padding: 10px 15px;
+border-radius: 10px;
+}
+/* Header layout in quiz */
+.header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 15px;
+}
+@media (max-width: 600px) {
+.card {
+padding: 20px;
+}
+h2 {
+font-size: 1.5rem;
+}
+button {
+font-size: 1rem;
+}
+}
